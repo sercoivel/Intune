@@ -1,0 +1,86 @@
+
+===========================2023/11/15 11:44:34=========================
+2023/11/15 11:44:34, [retriveCPSFolder:87] - Detected CPS folder: "C:\Program Files\SonicWall\Client Protection Service\"
+2023/11/15 11:44:34, [retriveCCInstallFolder:42] - Detected Capture Client install folder: "C:\Program Files (x86)\SonicWall\Capture Client\"
+2023/11/15 11:44:34, [main:190] - repair cc parent folder permissions.
+2023/11/15 11:44:34, [repairFolderPermissions:219] - Folder/File <C:\Program Files (x86)\SonicWall\> does not exist.
+
+===========================2023/11/15 11:47:28=========================
+2023/11/15 11:47:28, [retriveCPSFolder:87] - Detected CPS folder: "C:\Program Files\SonicWall\Client Protection Service\"
+2023/11/15 11:47:28, [retriveCCInstallFolder:42] - Detected Capture Client install folder: "C:\Program Files (x86)\SonicWall\Capture Client\"
+2023/11/15 11:47:28, [main:190] - repair cc parent folder permissions.
+2023/11/15 11:47:28, [repairFolderPermissions:219] - Folder/File <C:\Program Files (x86)\SonicWall\> does not exist.
+
+===========================2023/11/15 11:47:41=========================
+2023/11/15 11:47:41, [retriveCPSFolder:87] - Detected CPS folder: "C:\Program Files\SonicWall\Client Protection Service\"
+2023/11/15 11:47:41, [retriveCCInstallFolder:42] - Detected Capture Client install folder: "C:\Program Files (x86)\SonicWall\Capture Client\"
+2023/11/15 11:47:41, [main:190] - repair cc parent folder permissions.
+2023/11/15 11:47:41, [repairFolderPermissions:219] - Folder/File <C:\Program Files (x86)\SonicWall\> does not exist.
+2023/11/15 11:47:41, [authorized:15] - Failed to open configuration database file 'C:\Program Files (x86)\SonicWall\Capture Client\config.db'. error 14 (unable to open database file)
+
+2023/11/15 11:47:41, [protoCompatible:24] - Checking client protection service compatibility.
+2023/11/15 11:47:41, [protoCompatible:56] - Client protection service has not been detected.
+2023/11/15 11:47:41, [needReboot:602] - CPS service is not running (correctly), remove driver.
+2023/11/15 11:47:41, [uninstallCPSDriver:488] - Begin driver uninstall
+
+2023/11/15 11:47:41, [uninstallCPSDriver:495] - Opening SCM
+
+2023/11/15 11:47:41, [uninstallCPSDriver:505] - Opening service 'SFPMonitor'
+
+2023/11/15 11:47:41, [uninstallCPSDriver:513] - Stopping service 'SFPMonitor'
+
+2023/11/15 11:47:41, [uninstallCPSDriver:525] - Failed to stop service. error 1052
+
+2023/11/15 11:47:41, [uninstallCPSDriver:534] - Deleting service 'SFPMonitor'
+
+2023/11/15 11:47:41, [uninstallCPSDriver:538] - Failed to delete service. error 1072
+
+2023/11/15 11:47:41, [uninstallCPSDriver:555] - Deleting installed file 'C:\WINDOWS\System32\Drivers\SFPMonitor.sys'
+
+2023/11/15 11:47:41, [uninstallCPSDriver:567] - No driver file found to delete
+
+2023/11/15 11:47:41, [uninstallCPSDriver:597] - End driver uninstall, res = 14
+
+2023/11/15 11:47:41, [needReboot:643] - driver removed.
+2023/11/15 11:47:41, [repair:710] - CPS is healthy, unprotect the CC services.
+2023/11/15 11:47:41, [swchelper::sync_query:665] - Less than one IPC connection: 0
+2023/11/15 11:47:41, [unprotectCCServices:109] - unprotect swlogsvc
+2023/11/15 11:47:41, [swchelper::sync_query:665] - Less than one IPC connection: 0
+2023/11/15 11:47:41, [unprotectCCServices:109] - unprotect swtpsvc
+2023/11/15 11:47:41, [swchelper::sync_query:665] - Less than one IPC connection: 0
+2023/11/15 11:47:41, [unprotectCCServices:109] - unprotect swngavmsvc
+2023/11/15 11:47:41, [swchelper::sync_query:665] - Less than one IPC connection: 0
+2023/11/15 11:47:41, [unprotectCCServices:109] - unprotect swcfdrv
+2023/11/15 11:47:41, [swchelper::sync_query:665] - Less than one IPC connection: 0
+2023/11/15 11:47:41, [unprotectCCServices:109] - unprotect swenfsvc
+2023/11/15 11:47:41, [swchelper::sync_query:665] - Less than one IPC connection: 0
+2023/11/15 11:47:41, [unprotectCCServices:109] - unprotect swwpsvc
+2023/11/15 11:47:41, [swchelper::sync_query:665] - Less than one IPC connection: 0
+2023/11/15 11:47:41, [repair:729] - repair permissions
+2023/11/15 11:47:41, [repairFolderPermissions:219] - Folder/File <C:\Program Files (x86)\SonicWall\Capture Client\> does not exist.
+2023/11/15 11:47:41, [repairFolderPermissions:227] - CPS folder <C:\Program Files\SonicWall\Client Protection Service\> does not exist.
+2023/11/15 11:47:41, [repair:733] - repair permissions successfully
+2023/11/15 11:47:41, [uninstall:385] - Found Capture Client installer product code: {6689ADD4-934E-4F97-9981-DDEA2D1BAABF}
+2023/11/15 11:47:41, [cleanupConfigDB:455] - Configuration database file 'C:\Program Files (x86)\SonicWall\Capture Client\config.db' not found.
+2023/11/15 11:47:41, [uninstallCPSDriver:488] - Begin driver uninstall
+
+2023/11/15 11:47:41, [uninstallCPSDriver:495] - Opening SCM
+
+2023/11/15 11:47:41, [uninstallCPSDriver:505] - Opening service 'SFPMonitor'
+
+2023/11/15 11:47:41, [uninstallCPSDriver:513] - Stopping service 'SFPMonitor'
+
+2023/11/15 11:47:41, [uninstallCPSDriver:525] - Failed to stop service. error 1052
+
+2023/11/15 11:47:41, [uninstallCPSDriver:534] - Deleting service 'SFPMonitor'
+
+2023/11/15 11:47:41, [uninstallCPSDriver:538] - Failed to delete service. error 1072
+
+2023/11/15 11:47:41, [uninstallCPSDriver:555] - Deleting installed file 'C:\WINDOWS\System32\Drivers\SFPMonitor.sys'
+
+2023/11/15 11:47:41, [uninstallCPSDriver:567] - No driver file found to delete
+
+2023/11/15 11:47:41, [uninstallCPSDriver:597] - End driver uninstall, res = 14
+
+2023/11/15 11:47:41, [mcl::mswin::reg::remove:62] - Failed to remove reg value <Software\Microsoft\Windows\CurrentVersion\Run:SonicWall Capture Client>: 2
+2023/11/15 11:47:41, [mcl::mswin::reg::remove:41] - Failed to remove reg key <SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{6689ADD4-934E-4F97-9981-DDEA2D1BAABF}> : 2
