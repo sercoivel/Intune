@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.3.10-1.msi -OutFile ${env:tmp}\wazuh-agent-4.3.10.msi; msiexec.exe /i ${env:tmp}\wazuh-agent-4.3.10.msi /q WAZUH_MANAGER='194.163.191.120' WAZUH_REGISTRATION_SERVER='194.163.191.120' WAZUH_AGENT_GROUP='default'
