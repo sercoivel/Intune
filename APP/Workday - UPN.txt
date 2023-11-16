@@ -1,0 +1,43 @@
+
+
+
+
+If (JobCategory == Director/a Hotel){
+	mail==null;
+}else{
+	If (JobProfile == Hotel){
+		mail==null;
+	}else{
+		SelectUniqueValue( 
+		  	ToLower
+		  	(Join
+		    	("@", NormalizeDiacritics
+		    		(StripSpaces
+		    			(Join
+		    				(Mid([PreferredFirstName], 1, 1), [PreferredLastName])
+						)
+					)
+				, "sercotel.com"
+				)
+			), 
+
+
+		    ToLower(Join("@", NormalizeDiacritics(StripSpaces(Join(Mid([PreferredFirstName], 1, 2), [PreferredLastName]))), "sercotel.com"))
+
+		)
+	}
+}
+
+
+
+SelectUniqueValue( 
+        ToLower(Join("@", NormalizeDiacritics(StripSpaces(Join("",  Mid([PreferredFirstName], 1, 1), [PreferredLastName]))), "sercotel.com")), 
+
+        ToLower(Join("@", NormalizeDiacritics(StripSpaces(Join("",  Mid([PreferredFirstName], 1, 2), [PreferredLastName]))), "sercotel.com"))
+
+    )
+
+
+
+
+
